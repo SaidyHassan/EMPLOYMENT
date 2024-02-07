@@ -1,0 +1,92 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+html
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(0, 0, 97);
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 13, 88);
+    width: 350px;
+    height: 55vh;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 1px #0399df;
+}
+form
+{
+    margin: 2rem;
+}
+form h1
+{
+    text-align: center;
+    color: aqua;
+}
+.sign-button a 
+{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+button
+{
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+}
+button:hover
+{
+    transform: scale(1.1);
+    border: 1px solid #ffff;
+}
+p
+{
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffff;
+}
+p a
+{
+    margin-left: 2px;
+    text-decoration: none;
+    color: aqua;
+}
+.social
+{
+    text-align: center;
+}
+.social i
+{
+    margin: 0.6rem;
+    font-size: x-large;
+    color: blue;
+    cursor: pointer;
+}
+@media  screen and (max-width: 770px)
+{
+    .form-box
+    {
+    width: 300px;
+    }
+}

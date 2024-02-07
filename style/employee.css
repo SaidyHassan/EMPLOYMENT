@@ -1,0 +1,575 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:  rgb(6, 6, 97);
+ 
+}
+.banner
+{
+    background:linear-gradient(rgb(0, 0, 0,0.5),#030a4d),url('../Images/online-school-equipment-home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.top-nav
+{
+    width: 100%;
+    z-index: 999;
+    background-color: #0842ad;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.top-nav h1
+{
+    margin: 0.6rem;
+    padding-left: 5rem;
+    color:#09ffea
+}
+.reg-btn
+{
+    margin: 0.6rem;
+}
+.reg-btn a button
+{
+    width: 100px;
+    height: 30px;
+    margin-left: 2rem;
+    background-color: #030a4d;
+    border: 1px solid black;
+    color: #ffff;
+    box-shadow: 0 1px 5px 1px #02afff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reg-btn a button:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 1px 5px 1px #ff00d4;
+}
+.menu-items
+{
+    list-style: none;
+    display: flex;
+}
+.menu-items li
+{
+    width: 80px;
+    margin: 0.6rem;
+    margin-right: 3rem;
+    display: block;
+}
+.top-nav ul li:hover
+{
+    background: #600ac2;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+}
+.top-nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu-btn
+{
+    float: right;
+    padding: 0.6rem;
+    color: white;
+    display: none;
+}
+.banner-text
+{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2%;
+}
+span
+{
+    color: #09ffea;
+    animation: animate 10s infinite;
+}
+@keyframes animate 
+{
+    0%
+    {
+        color: #0399df;
+    }
+    50%
+    {
+        color: aquamarine;
+    }
+    100%
+    {
+        color: rgb(39, 1, 255);
+    }
+}
+.banner-text p
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner-btn
+{
+    margin: 40px auto 0;
+}
+.banner-btn a
+{
+    width: 140px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border: 0.5px solid;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+    transition: .5s;
+}
+.banner-btn a:hover
+{
+    transform: scale(0.9);
+    width: 140px;
+    background-color: rgb(43, 43, 126);
+    color: white;
+}
+
+/* Media query for small screen in the banner */
+
+@media  screen and (max-width: 770px) {
+    .banner-text h1
+    {
+        font-size: 30px;
+    }
+    .banner-text p
+    {
+        font-size: 18px;
+        font-style: italic;
+    }
+    .banner-btn a
+    {
+        display: block;
+        margin: 1rem auto;
+    }
+    .menu-items
+    {
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #340569;
+        width: 100%;
+        margin-top: 2.7rem;
+        display: none;
+    }
+    .reg-btn
+    {
+        display: none;
+    }
+    .menu-btn
+    {
+        display: block;
+        cursor: pointer;
+        font-size: x-large;
+        padding-right: 2rem;
+    }
+    .top-nav h1
+    {
+        padding-left: 2rem;
+    }
+    .top-nav ul li:hover
+    {
+        transform: scaleX(1.1);
+        background: inherit;
+        border: none;
+    }
+    
+}
+
+
+
+
+.about
+{
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(6, 6, 97);
+}
+.about-txt
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about-txt p
+{
+    margin: auto;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.about-box
+{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.about-pic
+{
+    flex-basis: 50%;
+}
+.about-pic img
+{
+    width: 90%;
+    border-radius: 10px;
+}
+.about-info
+{
+    color: white;
+    flex-basis: 50%;
+    text-align: initial;
+}
+.about-infobutton
+{
+    margin-top: 4rem;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #ffff;
+    cursor: pointer;
+    transition: .2s;
+    text-align: center;
+    font-weight: bold;
+}
+.about-infobutton:hover
+{
+    background-color: #030a4d;
+    color: white;
+    transform: scale(0.9);
+}
+.about-txt h1
+{
+    margin-top: 2rem;
+    color: white;
+}
+.choosing-us
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.about-features
+{
+    flex-basis: 50%;
+}
+.about-features-image
+{
+    flex-basis: 50%;
+    margin: auto;
+}
+.about-features-image img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-features h2
+{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color: aqua
+}
+.about-descr
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-icon i
+{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border: 8px;
+    color: rgb(5, 28, 243);
+}
+.about-content p
+{
+    padding: 0 20px;
+    text-align: initial;
+    color: white;
+}
+/* Media Query for the about us section */
+@media  screen and (max-width: 770px)
+{
+    .about-pic img
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .about-info
+    {
+        width: 100%;
+    }
+    .about-infobutton
+    {
+        margin-top: 2rem;
+    }
+    .about-txt p
+    {
+        font-size: 20px;
+    }
+    .about-features
+    {
+    flex-basis: 100%;
+    }
+    .about-features-image
+    {
+    flex-basis: 100%;
+    }
+    .about-features-image img
+    {
+        width: 100%;
+    }
+    .about-features h2
+    {
+        font-family: 'Times New Roman', Times, serif;
+        color: aqua;
+        
+    }
+    .about-content p
+    {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .about-pic
+    {
+        flex-basis: 100%;
+    }
+    .about-info
+    {
+        flex-basis: 100%;
+    }
+}
+
+
+.service
+{
+    background-color: rgb(6, 6, 97);
+    width: 100%;
+    padding: 20px 0;
+}
+.service-tittle
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.service-tittle h1
+{
+    color: white;
+}
+.service-data
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.service-container
+{
+    flex-basis: 30%;
+    background-color: rgb(13, 13, 70);
+    color: white;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.service-container:hover
+{
+    transform: translateY(15px);
+}
+.service-descr
+{
+    padding: 2%;
+}
+.job-button
+{
+    border-radius: 5px;
+    border: 1px solid #ffff;
+    text-align: center;
+    width: 40%;
+    height: 30px;
+    margin:0.6rem 0rem;
+    background-color: rgb(43, 43, 126);
+    color: #ffff;
+}
+.service-descr h3
+{
+    color: #09ffea;
+
+}
+.job-button:hover 
+{
+   transform: scale(1.1);
+}
+.job-button i
+{
+    margin-left: 2%;
+    align-content: center;
+    color: #09ffea;
+}
+/* Media Query for the comments section */
+@media  screen and (max-width: 770px)
+{
+    .service-container
+    {
+        flex-basis: 100%;
+    }
+}
+
+
+.comments
+{
+    background-color: rgb(3, 3, 100);
+    width: 100%;
+    padding: 20px 0;
+}
+.comments-tittle
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.comments-tittle p
+{
+    margin: auto;
+    font-size: 20px;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.comments-tittle h1
+{
+    color: white;
+}
+.comment-row
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.comments-col{
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px #0399df;
+    transition: .5s;
+}
+.comments-col p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.comments-col:hover 
+{
+    transform: translateY(10px);
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: space-evenly;
+    
+}
+.user .fa-user
+{
+    color: aqua;
+    gap: 1rem;
+}
+.user .fa-twitter
+{
+    color: aqua;
+    transition: .1s;
+    cursor: pointer;
+}
+.user .fa-twitter:hover
+{
+    transform: scale(1.1);
+}
+.user-info h4
+{
+    color: #09ffea;
+}
+.user-info small
+{
+    color: rgb(9, 228, 155);
+    cursor: pointer;
+}
+/* Media Query for the comments section */
+@media  screen and (max-width: 770px)
+{
+    .comments-col
+    {
+        flex-basis: 100%;
+    }
+    .comments-col p
+    {
+        font-size: 17px;
+    }
+    .user .fa-user
+    {
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 2%;
+    }
+}
+
+
+
+.footer
+{
+    background-color: #10107c;
+    width: 100%;
+    padding: 20px 0;
+}
+.socal-link-container
+{
+    text-align: center;
+}
+.socal-link-container a li
+{
+    color: #09ffea;
+    margin-left: 1rem;
+    font-size: xx-large;
+}
+.socal-link-container h2
+{
+    margin-top: 2%;
+    color: #03acfa;
+}
+.socal-link-container p
+{
+    color: #ffff;
+}
