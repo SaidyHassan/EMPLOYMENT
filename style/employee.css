@@ -369,7 +369,7 @@ span
     }
     .about-content p
     {
-        font-family: Consolas;
+        font-family: 'Courier New', Courier, monospace;
         font-size: larger;
     }
     .about-pic
@@ -380,6 +380,9 @@ span
     {
         flex-basis: 100%;
     }
+        .about-info p{
+            font-family: 'Courier New', Courier, monospace;
+        }
 }
 
 
@@ -552,7 +555,7 @@ span
     .comments-col p
     {
         font-size: 15px;
-        font-family: cursive;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .user .fa-user
     {
